@@ -182,13 +182,13 @@ center: true,
   });
 
   // filter items on button click
-  $('.portfolio-menu').on('click', 'button', function () {
+  $('.canonical-menu').on('click', 'button', function () {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
   });
 
   //for menu active class
-  $('.portfolio-menu button').on('click', function (event) {
+  $('.canonical-menu button').on('click', function (event) {
     $(this).siblings('.active').removeClass('active');
     $(this).addClass('active');
     event.preventDefault();

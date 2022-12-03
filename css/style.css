@@ -46,7 +46,7 @@ a:focus {
 /* line 28, ../../Arafath/CL/December/230. Portfolio/HTML/scss/theme-default.scss */
 a:focus,
 a:hover,
-.portfolio-cat a:hover,
+.canonical-cat a:hover,
 .footer -menu li a:hover {
   text-decoration: none;
 }
@@ -2076,13 +2076,13 @@ h3 {
 }
 
 /* line 15, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .more_works {
+.canonical_area .more_works {
   background: #040E27;
   padding: 35px 0;
 }
 
 /* line 18, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .more_works a {
+.canonical_area .more_works a {
   font-size: 20px;
   font-family: "Alata", sans-serif;
   color: #fff;
@@ -2090,12 +2090,12 @@ h3 {
 }
 
 /* line 25, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .portfolio_wrap {
+.canonical_area .canonical_wrap {
   overflow: hidden;
 }
 
 /* line 28, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .single_gallery {
+.canonical_area .single_gallery {
   overflow: hidden;
   width: 35%;
   position: relative;
@@ -2105,34 +2105,34 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 28, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery {
+  .canonical_area .single_gallery {
     width: 100%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 28, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery {
+  .canonical_area .single_gallery {
     width: 50%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 28, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery {
+  .canonical_area .single_gallery {
     width: 50%;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
   /* line 28, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery {
+  .canonical_area .single_gallery {
     width: 33.33333%;
   }
 }
 
 /* line 46, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .single_gallery::before {
+.canonical_area .single_gallery::before {
   width: 351px;
   height: 351px;
   background: #0181F5;
@@ -2154,81 +2154,81 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 46, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery::before {
+  .canonical_area .single_gallery::before {
     width: 250px;
     height: 250px;
   }
 }
 
 /* line 64, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .single_gallery.small_width {
+.canonical_area .single_gallery.small_width {
   width: 30%;
 }
 
 @media (max-width: 767px) {
   /* line 64, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery.small_width {
+  .canonical_area .single_gallery.small_width {
     width: 100%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 64, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery.small_width {
+  .canonical_area .single_gallery.small_width {
     width: 50%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 64, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery.small_width {
+  .canonical_area .single_gallery.small_width {
     width: 50%;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
   /* line 64, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery.small_width {
+  .canonical_area .single_gallery.small_width {
     width: 33.33333%;
   }
 }
 
 /* line 79, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .single_gallery .thumb {
+.canonical_area .single_gallery .thumb {
   border-radius: 0;
   height: 484px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 79, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery .thumb {
+  .canonical_area .single_gallery .thumb {
     height: 300px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 79, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery .thumb {
+  .canonical_area .single_gallery .thumb {
     height: 370px;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
   /* line 79, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery .thumb {
+  .canonical_area .single_gallery .thumb {
     height: 350px;
   }
 }
 
 @media (max-width: 767px) {
   /* line 79, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery .thumb {
+  .canonical_area .single_gallery .thumb {
     height: auto;
   }
 }
 
 /* line 94, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .single_gallery .thumb img {
+.canonical_area .single_gallery .thumb img {
   width: 100%;
   height: 100%;
   -webkit-transform: scale(1.2);
@@ -2242,14 +2242,14 @@ h3 {
 }
 
 /* line 103, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .single_gallery .gallery_hover {
+.canonical_area .single_gallery .gallery_hover {
   position: absolute;
   left: 0;
   bottom: 0;
 }
 
 /* line 107, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .single_gallery .gallery_hover .hover_inner {
+.canonical_area .single_gallery .gallery_hover .hover_inner {
   position: relative;
   z-index: 12;
   padding-bottom: 60px;
@@ -2258,14 +2258,14 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 107, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery .gallery_hover .hover_inner {
+  .canonical_area .single_gallery .gallery_hover .hover_inner {
     padding-left: 15px;
     padding-bottom: 20px;
   }
 }
 
 /* line 116, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .single_gallery .gallery_hover .hover_inner span {
+.canonical_area .single_gallery .gallery_hover .hover_inner span {
   display: block;
   font-size: 14px;
   color: #B3D9FC;
@@ -2283,13 +2283,13 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 116, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery .gallery_hover .hover_inner span {
+  .canonical_area .single_gallery .gallery_hover .hover_inner span {
     font-size: 14px;
   }
 }
 
 /* line 131, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .single_gallery .gallery_hover .hover_inner h3 {
+.canonical_area .single_gallery .gallery_hover .hover_inner h3 {
   font-size: 30px;
   color: #fff;
   font-weight: 400;
@@ -2306,13 +2306,13 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 131, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery .gallery_hover .hover_inner h3 {
+  .canonical_area .single_gallery .gallery_hover .hover_inner h3 {
     font-size: 20px;
   }
 }
 
 /* line 149, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .single_gallery:hover::before {
+.canonical_area .single_gallery:hover::before {
   opacity: 1;
   left: -6%;
   bottom: -20%;
@@ -2320,33 +2320,33 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 149, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery:hover::before {
+  .canonical_area .single_gallery:hover::before {
     left: -10%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 149, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery:hover::before {
+  .canonical_area .single_gallery:hover::before {
     left: -13%;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
   /* line 149, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-  .portfolio_area .single_gallery:hover::before {
+  .canonical_area .single_gallery:hover::before {
     left: -10%;
   }
 }
 
 /* line 167, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .single_gallery:hover .hover_inner h3, .portfolio_area .single_gallery:hover .hover_inner span {
+.canonical_area .single_gallery:hover .hover_inner h3, .canonical_area .single_gallery:hover .hover_inner span {
   opacity: 1 !important;
   left: 0%;
 }
 
 /* line 173, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_gallery.scss */
-.portfolio_area .single_gallery:hover .thumb img {
+.canonical_area .single_gallery:hover .thumb img {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -3696,7 +3696,7 @@ h3 {
   overflow: visible;
 }
 
-/* line 1, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 1, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area {
   background: #040E27;
   padding-bottom: 70px;
@@ -3704,7 +3704,7 @@ h3 {
   margin-top: -30px;
 }
 
-/* line 6, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 6, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_catagory_wrap {
   display: -webkit-box;
   display: -moz-box;
@@ -3720,19 +3720,19 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  /* line 6, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+  /* line 6, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
   .work_details_area .details_catagory_wrap {
     display: block;
     margin-bottom: 40px;
   }
 }
 
-/* line 14, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 14, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_catagory_wrap .single_catagory {
   margin-bottom: 30px;
 }
 
-/* line 16, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 16, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_catagory_wrap .single_catagory span {
   font-size: 12px;
   color: #828793;
@@ -3742,79 +3742,79 @@ h3 {
   margin-bottom: 6px;
 }
 
-/* line 24, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 24, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_catagory_wrap .single_catagory h4 {
   font-size: 16px;
   color: #fff;
   font-weight: 400;
 }
 
-/* line 30, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 30, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_catagory_wrap .single_catagory .social_links a {
   font-size: 16px;
   color: #fff;
   margin-right: 20px;
 }
 
-/* line 34, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 34, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_catagory_wrap .single_catagory .social_links a:hover {
   color: #0181F5 !important;
 }
 
-/* line 39, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 39, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_catagory_wrap .single_catagory .porject_btn {
   background: transparent;
   border-color: #0181F5;
   color: #0181F5 !important;
 }
 
-/* line 43, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 43, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_catagory_wrap .single_catagory .porject_btn:hover {
   color: #0181F5 !important;
   background: #fff;
   border-color: #fff;
 }
 
-/* line 51, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 51, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .banner {
   margin-bottom: 100px;
 }
 
 @media (max-width: 767px) {
-  /* line 51, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+  /* line 51, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
   .work_details_area .banner {
     margin-bottom: 40px;
   }
 }
 
-/* line 56, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 56, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .banner img {
   width: 100%;
 }
 
-/* line 61, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 61, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_info {
   margin-bottom: 70px;
 }
 
-/* line 63, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 63, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_info .info {
   margin-bottom: 30px;
 }
 
-/* line 65, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 65, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_info .info p {
   font-size: 16px;
   font-weight: 400;
   color: #AAB1B7;
 }
 
-/* line 74, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 74, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_single_img .thumb {
   margin-bottom: 30px;
 }
 
-/* line 76, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_portfolio_details.scss */
+/* line 76, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_canonical_details.scss */
 .work_details_area .details_single_img .thumb img {
   width: 100%;
 }
@@ -7033,3 +7033,18 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+[class*='logo']{
+  height: 57px !important;
+}
+ 
+[class*='logo'] img {
+  height: 47px !important;
+}
+
+ 
+[class='logo_footer'] img {
+  margin-left: -65px !important;
+  height: 90px !important;
+}

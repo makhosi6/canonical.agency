@@ -40,7 +40,7 @@ a:focus {
 /* line 28, ../../Arafath/CL/December/230. Portfolio/HTML/scss/theme-default.scss */
 a:focus,
 a:hover,
-.portfolio-cat a:hover,
+.canonical-cat a:hover,
 .footer -menu li a:hover {
   text-decoration: none;
 }
