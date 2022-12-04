@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+        <!-- custom js -->
+<script src="js/main.canonical.js"></script>
 </head>
 
 <body>
@@ -175,7 +177,7 @@
         </div>
     </div>
     <!--/ service_area  -->
-
+<!-- 
     <div class="creative_people">
         <div class="container">
             <div class="row">
@@ -236,8 +238,8 @@
         </div>
     </div>
 
-
-    <!-- testimonial_area  -->
+ -->
+    <!-- testimonial_area  
     <div class="testimonial_area ">
             <div class="outline_text white testmonial d-none d-lg-block">
                     Testimonial
@@ -299,26 +301,67 @@
                 </div>
             </div>
         </div>
-    <!-- /testimonial_area  -->
-    
+    <!-- /testimonial_area 
+-->
     <!-- discuss_projects_start  -->
     <div class="discuss_projects">
             <div class="outline_text white project d-none d-lg-block">
-                    Let’s talk
+                Let's Talk
             </div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="project_text text-center">
                         <h3>Let’s start your project with us</h3>
-                        <a class="boxed-btn3" href="#">Let's Chat</a>
+                        <span class="boxed-btn3" onclick="openForm()">Let's Talk</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- discuss_projects_end  -->
+<!-- popup form -->
+<div
+class="form-popup animate__animated animate__fadeInBottomRight animate__faster"
+id="myForm"
+>
+<form action="/action_page.php" class="form-container">
+  <div class="form-group">
+    <input
+      class="form-control my-4"
+      type="text"
+      placeholder="Enter Preferred Name"
+      name="name"
+      required
+    />
 
+    <input
+      class="form-control my-4"
+      type="text"
+      placeholder="Enter Email"
+      name="email"
+      required
+    />
+
+    <button
+      type="submit"
+      class="button button-contactForm btn_4 boxed-btn"
+      onclick="sendForm()"
+    >
+      Send
+    </button>
+    <button
+      type="button"
+      class="button button-contactForm btn_4 boxed-btn-close"
+      onclick="closeForm()"
+    >
+      Close
+    </button>
+  </div>
+</form>
+</div>
+
+<!-- popup form end 
     <!-- footer start -->
     <footer class="footer">
             <div class="footer_top">
