@@ -7048,3 +7048,56 @@ h6 {
   margin-left: -65px !important;
   height: 90px !important;
 }
+
+
+.heart-red{
+  color:  #FF7F7F !important;
+  padding: 0 4px ;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  border: 1px solid #79b2e8;
+  background-color: #fff;
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  padding: 50px;
+  right: 120px;
+  z-index: 100;
+    text-align: center !important;
+}
+
+/* Add styles to the form container */
+.form-container {
+  padding: 10px;
+  background-color: #fff;
+  max-width: 300px;
+  text-align: center !important;
+}
+
+
+
+element.style {
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+.boxed-btn-close:hover, .boxed-btn-close:focus {
+  background-color: #D8000C;
+ color: #FFBABA;
+}
+.boxed-btn-close {
+  color: #D8000C;
+  background-color: #FFBABA;
+    display: inline-block;
+    padding: 14px 44px;
+    font-family: "Alata", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid ;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
