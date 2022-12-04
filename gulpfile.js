@@ -1,16 +1,16 @@
-const htmlMinify = require('html-minifier');
-const gulp = require('gulp');
-const { src, dest, watch, series, parallel } = require('gulp');
-const imagemin = require('gulp-imagemin');
-const sourcemaps = require('gulp-sourcemaps');
-const concat = require('gulp-concat');
-const rename = require('gulp-rename');
-const replace = require('gulp-replace');
-const terser = require('gulp-terser');
-const sass = require('gulp-sass');
-const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
+const htmlMinify = require("html-minifier");
+const gulp = require("gulp");
+const { src, dest, watch, series, parallel } = require("gulp");
+const imagemin = require("gulp-imagemin");
+const sourcemaps = require("gulp-sourcemaps");
+const concat = require("gulp-concat");
+const rename = require("gulp-rename");
+const replace = require("gulp-replace");
+const terser = require("gulp-terser");
+const sass = require("gulp-sass");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
 
 /**
  * option to minify html
@@ -24,36 +24,39 @@ const options = {
   removeStyleLinkTypeAttributes: true,
   sortClassName: true,
   useShortDoctype: true,
-  collapseWhitespace: true
+  collapseWhitespace: true,
 };
 // All paths
 const paths = {
   html: {
-    src: ['./**/*.html'],
-    dest: './dist/',
+    src: ["./**/*.html"],
+    dest: "./dist/",
   },
   images: {
-    src: ['./images/**/*'],
-    dest: './dist/images/',
+    src: ["./img/**/*"],
+    dest: "./dist/img/",
   },
   fonts: {
-    src: ['./fonts/**/*'],
-    dest: './dist/fonts/',
+    src: ["./fonts/**/*"],
+    dest: "./dist/fonts/",
   },
   styles: {
-    src: ['./css/**/*.css'],
-    dest: './dist/css/',
+    src: ["./css/**/*.css"],
+    dest: "./dist/css/",
   },
   scripts: {
-    src: ['./js/**/*.js'],
-    dest: './dist/js/',
+    src: ["./js/**/*.js"],
+    dest: "./dist/js/",
+  },
+  rootAssets: {
+    src: "./*.{php,jpg,png,ico,webmanifest,json}",
+    dest: "./dist/",
   },
   cachebust: {
-    src: ['./dist/**/*.html'],
-    dest: './dist/',
+    src: ["./dist/**/*.html"],
+    dest: "./dist/",
   },
 };
-
 
 // Optimize images(.png, .jpeg, .gif, .svg)
 /**
@@ -68,13 +71,17 @@ const paths = {
  *     ])
  */
 function optimizeImages() {
-  return src(paths.images.src)
-    // .pipe(imagemin().on('error', (error) => console.log(error)))
-    .pipe(dest(paths.images.dest));
+  return (
+    src(paths.images.src)
+      // .pipe(imagemin().on('error', (error) => console.log(error)))
+      .pipe(dest(paths.images.dest))
+  );
 }
 function optimizeFonts() {
-  return src(paths.fonts.src)
-    .pipe(dest(paths.fonts.dest));
+  return src(paths.fonts.src).pipe(dest(paths.fonts.dest));
+}
+function rootAssets() {
+  return src(paths.rootAssets.src).pipe(dest(paths.rootAssets.dest));
 }
 
 // Compile styles
@@ -85,13 +92,15 @@ function optimizeFonts() {
  * Note - Not all plugins work with postcss, only the ones mentioned in their documentation
  */
 function compileStyles() {
-  return src(paths.styles.src)
-    // .pipe(sourcemaps.init())
-    // .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(rename({ suffix: '.min' }))
-    // .pipe(sourcemaps.write('.'))
-    .pipe(dest(paths.styles.dest));
+  return (
+    src(paths.styles.src)
+      // .pipe(sourcemaps.init())
+      // .pipe(sass().on('error', sass.logError))
+      .pipe(postcss([autoprefixer(), cssnano()]))
+      // .pipe(rename({ suffix: ".min" }))
+      // .pipe(sourcemaps.write('.'))
+      .pipe(dest(paths.styles.dest))
+  );
 }
 
 // Minify scripts
@@ -102,9 +111,9 @@ function compileStyles() {
 function minifyScripts() {
   return src(paths.scripts.src)
     .pipe(sourcemaps.init())
-    .pipe(terser().on('error', (error) => console.log(error)))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(sourcemaps.write('.'))
+    .pipe(terser().on("error", (error) => console.log(error)))
+    // .pipe(rename({ suffix: ".min" }))
+    .pipe(sourcemaps.write("."))
     .pipe(dest(paths.scripts.dest));
 }
 
@@ -117,7 +126,7 @@ function minifyScripts() {
  */
 function cacheBust() {
   return src(paths.cachebust.src)
-    .pipe(replace(/cache_bust=\d+/g, 'cache_bust=' + new Date().getTime()))
+    .pipe(replace(/cache_bust=\d+/g, "cache_bust=" + new Date().getTime()))
     .pipe(dest(paths.cachebust.dest));
 }
 
@@ -125,20 +134,23 @@ function cacheBust() {
 function watcher() {
   watch(paths.html.src, series(copyHtml, cacheBust));
   watch(paths.images.src, optimizeImages);
-  watch(paths.images.src, optimizeImages);
-  watch(paths.images.src, optimizeFonts);
+  watch(paths.fonts.src, optimizeFonts);
+  // watch(paths.images.src, optimizeFonts);
+  watch(paths.rootAssets.src, rootAssets);
   watch(paths.styles.src, parallel(compileStyles, cacheBust));
   watch(paths.scripts.src, parallel(minifyScripts, cacheBust));
 }
 
 function copyHtml() {
-    return src('./**/*.html')
-      .on('data', function(file) {
-        const bufferFile = Buffer.from(htmlMinify.minify(file.contents.toString(), options))
-        return file.contents = bufferFile
-      })
-      .pipe(dest('dist'))
-  }
+  return src("./**/*.html")
+    .on("data", function (file) {
+      const bufferFile = Buffer.from(
+        htmlMinify.minify(file.contents.toString(), options)
+      );
+      return (file.contents = bufferFile);
+    })
+    .pipe(dest("dist"));
+}
 // Export tasks to make them public
 exports.copyHtml = copyHtml;
 exports.optimizeImages = optimizeImages;
@@ -146,10 +158,17 @@ exports.optimizeFonts = optimizeFonts;
 exports.compileStyles = compileStyles;
 exports.minifyScripts = minifyScripts;
 exports.cacheBust = cacheBust;
+exports.rootAssets = rootAssets;
 exports.watcher = watcher;
 exports.default = series(
-  parallel(copyHtml, optimizeImages, optimizeFonts, compileStyles, minifyScripts),
+  parallel(
+    copyHtml,
+    rootAssets,
+    optimizeImages,
+    optimizeFonts,
+    compileStyles,
+    minifyScripts
+  ),
   cacheBust,
-  watcher,
+  watcher
 );
-
