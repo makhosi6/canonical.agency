@@ -7099,6 +7099,12 @@ label.error, [for*="message"].error, form .error {
   background-color: #D8000C;
  color: #FFBABA;
 }
+
+.primary, .active
+{
+  color: #0181f5 !important;
+}
+
 .boxed-btn-close {
   color: #D8000C;
   background-color: #FFBABA;
@@ -7117,4 +7123,8 @@ label.error, [for*="message"].error, form .error {
 .hero-text-centre {
   font-size: 13vw !important;
   z-index: -1;
+}
+
+.ordered-list li > span {
+  color: #aab1b7 !important;
 }
