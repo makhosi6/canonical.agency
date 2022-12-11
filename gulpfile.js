@@ -49,7 +49,7 @@ const paths = {
     dest: "./dist/js/",
   },
   rootAssets: {
-    src: "./*.{php,jpg,png,ico,webmanifest,json}",
+    src: "./*.{php,jpg,png,ico,webmanifest,pdf}",
     dest: "./dist/",
   },
   cachebust: {
