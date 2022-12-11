@@ -1,0 +1,23 @@
+/* CSV */
+027FF6,050F27,FEFBFE,4D6079,D46F7E
+
+/* With # */
+#027FF6, #050F27, #FEFBFE, #4D6079, #D46F7E
+
+/* Array */
+["027FF6","050F27","FEFBFE","4D6079","D46F7E"]
+
+/* Object */
+{"Azure":"027FF6","Oxford Blue":"050F27","Snow":"FEFBFE","Black Coral":"4D6079","Candy Pink":"D46F7E"}
+
+/* Extended Array */
+[{"name":"Azure","hex":"027FF6","rgb":[2,127,246],"cmyk":[99,48,0,4],"hsb":[209,99,96],"hsl":[209,98,49],"lab":[54,16,-67]},{"name":"Oxford Blue","hex":"050F27","rgb":[5,15,39],"cmyk":[87,62,0,85],"hsb":[222,87,15],"hsl":[222,77,9],"lab":[5,4,-17]},{"name":"Snow","hex":"FEFBFE","rgb":[254,251,254],"cmyk":[0,1,0,0],"hsb":[300,1,100],"hsl":[300,60,99],"lab":[99,2,-1]},{"name":"Black Coral","hex":"4D6079","rgb":[77,96,121],"cmyk":[36,21,0,53],"hsb":[214,36,47],"hsl":[214,22,39],"lab":[40,-1,-16]},{"name":"Candy Pink","hex":"D46F7E","rgb":[212,111,126],"cmyk":[0,48,41,17],"hsb":[351,48,83],"hsl":[351,54,63],"lab":[59,41,10]}]
+
+/* XML */
+<palette>
+  <color name="Azure" hex="027FF6" r="2" g="127" b="246" />
+  <color name="Oxford Blue" hex="050F27" r="5" g="15" b="39" />
+  <color name="Snow" hex="FEFBFE" r="254" g="251" b="254" />
+  <color name="Black Coral" hex="4D6079" r="77" g="96" b="121" />
+  <color name="Candy Pink" hex="D46F7E" r="212" g="111" b="126" />
+</palette>
